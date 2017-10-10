@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    Micropost.find_by_user_id(User.ids)
   end
 
   # GET /users/new
